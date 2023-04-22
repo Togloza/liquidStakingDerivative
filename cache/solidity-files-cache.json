@@ -1,4 +1,1034 @@
 {
   "_format": "hh-sol-cache-2",
-  "files": {}
+  "files": {
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\contracts\\LiquidStaking.sol": {
+      "lastModificationDate": 1682205618703,
+      "contentHash": "f211b20bc4d44c9856042663b4c5a383",
+      "sourceName": "contracts/LiquidStaking.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@thirdweb-dev/contracts/base/Staking20Base.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LiquidStaking"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\base\\Staking20Base.sol": {
+      "lastModificationDate": 1682204886632,
+      "contentHash": "0e59199be4c45f553fd31ad2a245f624",
+      "sourceName": "@thirdweb-dev/contracts/base/Staking20Base.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../extension/ContractMetadata.sol",
+        "../extension/Multicall.sol",
+        "../extension/Ownable.sol",
+        "../extension/Staking20.sol",
+        "../eip/interface/IERC20.sol",
+        "../eip/interface/IERC20Metadata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Staking20Base"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\extension\\ContractMetadata.sol": {
+      "lastModificationDate": 1682204886657,
+      "contentHash": "06ea99272c220e8d1c012b23dcbae479",
+      "sourceName": "@thirdweb-dev/contracts/extension/ContractMetadata.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/IContractMetadata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ContractMetadata"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\extension\\Multicall.sol": {
+      "lastModificationDate": 1682204886657,
+      "contentHash": "834d3d08b4122bf9a190db35ca7326c6",
+      "sourceName": "@thirdweb-dev/contracts/extension/Multicall.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../lib/TWAddress.sol",
+        "./interface/IMulticall.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Multicall"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\extension\\Ownable.sol": {
+      "lastModificationDate": 1682204886658,
+      "contentHash": "89e7a98b658d370b749ddd8bc79f428e",
+      "sourceName": "@thirdweb-dev/contracts/extension/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/IOwnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\eip\\interface\\IERC20Metadata.sol": {
+      "lastModificationDate": 1682204886656,
+      "contentHash": "0ca13c0ecc5999e34712e8d47a3c9208",
+      "sourceName": "@thirdweb-dev/contracts/eip/interface/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\eip\\interface\\IERC20.sol": {
+      "lastModificationDate": 1682204886656,
+      "contentHash": "30597c26592132a8a6a146fdd5eedee5",
+      "sourceName": "@thirdweb-dev/contracts/eip/interface/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\extension\\Staking20.sol": {
+      "lastModificationDate": 1682204886658,
+      "contentHash": "3d2f5e76d112438c46cbe6afa5eae1ab",
+      "sourceName": "@thirdweb-dev/contracts/extension/Staking20.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../openzeppelin-presets/security/ReentrancyGuard.sol",
+        "../openzeppelin-presets/utils/math/SafeMath.sol",
+        "../eip/interface/IERC20.sol",
+        "../lib/CurrencyTransferLib.sol",
+        "./interface/IStaking20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "Staking20"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\extension\\interface\\IContractMetadata.sol": {
+      "lastModificationDate": 1682204886664,
+      "contentHash": "a7f553656d258743961977a0d0d7fa05",
+      "sourceName": "@thirdweb-dev/contracts/extension/interface/IContractMetadata.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IContractMetadata"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\lib\\TWAddress.sol": {
+      "lastModificationDate": 1682204886669,
+      "contentHash": "c2399be317fbaff6df648777e4d842ac",
+      "sourceName": "@thirdweb-dev/contracts/lib/TWAddress.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TWAddress"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\extension\\interface\\IMulticall.sol": {
+      "lastModificationDate": 1682204886665,
+      "contentHash": "d97e0a2f475918e6bc021f0b11d15454",
+      "sourceName": "@thirdweb-dev/contracts/extension/interface/IMulticall.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IMulticall"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\extension\\interface\\IOwnable.sol": {
+      "lastModificationDate": 1682204886665,
+      "contentHash": "5a01ddb5d7261b9e91378353bd3e1e0e",
+      "sourceName": "@thirdweb-dev/contracts/extension/interface/IOwnable.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOwnable"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\lib\\CurrencyTransferLib.sol": {
+      "lastModificationDate": 1682204886669,
+      "contentHash": "18671055032f5d607f68a7d43946d30a",
+      "sourceName": "@thirdweb-dev/contracts/lib/CurrencyTransferLib.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IWETH.sol",
+        "../openzeppelin-presets/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CurrencyTransferLib"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\openzeppelin-presets\\security\\ReentrancyGuard.sol": {
+      "lastModificationDate": 1682204886670,
+      "contentHash": "87bd3ce9a60f4f215b736313dcefb8e2",
+      "sourceName": "@thirdweb-dev/contracts/openzeppelin-presets/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\extension\\interface\\IStaking20.sol": {
+      "lastModificationDate": 1682204886665,
+      "contentHash": "6a6c372689378345995074ec71c4fcac",
+      "sourceName": "@thirdweb-dev/contracts/extension/interface/IStaking20.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.11"
+      ],
+      "artifacts": [
+        "IStaking20"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\openzeppelin-presets\\utils\\math\\SafeMath.sol": {
+      "lastModificationDate": 1682204886673,
+      "contentHash": "162ccf43242f3d61992c57425c5829cf",
+      "sourceName": "@thirdweb-dev/contracts/openzeppelin-presets/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\interfaces\\IWETH.sol": {
+      "lastModificationDate": 1682204886669,
+      "contentHash": "148026c1608edb9be8766070f7e82954",
+      "sourceName": "@thirdweb-dev/contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\openzeppelin-presets\\token\\ERC20\\utils\\SafeERC20.sol": {
+      "lastModificationDate": 1682204886671,
+      "contentHash": "69b0ba7d113ea09d053f132a14d45d5e",
+      "sourceName": "@thirdweb-dev/contracts/openzeppelin-presets/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../../eip/interface/IERC20.sol",
+        "../../../../lib/TWAddress.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\base\\ERC20Base.sol": {
+      "lastModificationDate": 1682204886632,
+      "contentHash": "b841bc135fca60c9edf7c0b01994c4db",
+      "sourceName": "@thirdweb-dev/contracts/base/ERC20Base.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../openzeppelin-presets/token/ERC20/extensions/ERC20Permit.sol",
+        "../extension/ContractMetadata.sol",
+        "../extension/Multicall.sol",
+        "../extension/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Base"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\openzeppelin-presets\\token\\ERC20\\extensions\\ERC20Permit.sol": {
+      "lastModificationDate": 1682204886671,
+      "contentHash": "dbc1fd3b37146ece7a062dded32fa3a6",
+      "sourceName": "@thirdweb-dev/contracts/openzeppelin-presets/token/ERC20/extensions/ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../../eip/interface/IERC20Permit.sol",
+        "../ERC20.sol",
+        "../../../utils/cryptography/EIP712.sol",
+        "../../../utils/cryptography/ECDSA.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\eip\\interface\\IERC20Permit.sol": {
+      "lastModificationDate": 1682204886656,
+      "contentHash": "7d796cee942e6b138485934e561338dc",
+      "sourceName": "@thirdweb-dev/contracts/eip/interface/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\openzeppelin-presets\\utils\\cryptography\\ECDSA.sol": {
+      "lastModificationDate": 1682204886672,
+      "contentHash": "42fe0ea260e682b67086dfc4f4a6aefb",
+      "sourceName": "@thirdweb-dev/contracts/openzeppelin-presets/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../lib/TWStrings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\openzeppelin-presets\\utils\\Counters.sol": {
+      "lastModificationDate": 1682204886672,
+      "contentHash": "047d6dfb038d43ebdcb4dda73e4acaf1",
+      "sourceName": "@thirdweb-dev/contracts/openzeppelin-presets/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\openzeppelin-presets\\utils\\cryptography\\EIP712.sol": {
+      "lastModificationDate": 1682204886673,
+      "contentHash": "c4d862b1c14a8edafe8dea4876e6da26",
+      "sourceName": "@thirdweb-dev/contracts/openzeppelin-presets/utils/cryptography/EIP712.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\openzeppelin-presets\\token\\ERC20\\ERC20.sol": {
+      "lastModificationDate": 1682204886670,
+      "contentHash": "24ff5136394830e7e6a7f1206040ba86",
+      "sourceName": "@thirdweb-dev/contracts/openzeppelin-presets/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../eip/interface/IERC20.sol",
+        "../../../eip/interface/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\lib\\TWStrings.sol": {
+      "lastModificationDate": 1682204886669,
+      "contentHash": "298b9c8249ef1f04e6221258878c0dbc",
+      "sourceName": "@thirdweb-dev/contracts/lib/TWStrings.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TWStrings"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\@thirdweb-dev\\contracts\\openzeppelin-presets\\utils\\Context.sol": {
+      "lastModificationDate": 1682204886672,
+      "contentHash": "e7f98c33ad1d39d8a6661bf0804fae36",
+      "sourceName": "@thirdweb-dev/contracts/openzeppelin-presets/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "C:\\Users\\TomOg\\LiquidStaking\\liquidStakingDerivative\\contracts\\LST.sol": {
+      "lastModificationDate": 1682205618730,
+      "contentHash": "6fbb96824a1d68e8f028457652c65664",
+      "sourceName": "contracts/LST.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@thirdweb-dev/contracts/base/ERC20Base.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LST"
+      ]
+    }
+  }
 }
