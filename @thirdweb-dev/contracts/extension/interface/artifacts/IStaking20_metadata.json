@@ -1,0 +1,279 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "staker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "rewardAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "RewardsClaimed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "staker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensStaked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "staker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensWithdrawn",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "oldAmount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "UpdatedMinStakeAmount",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "oldNumerator",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newNumerator",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "oldDenominator",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newDenominator",
+						"type": "uint256"
+					}
+				],
+				"name": "UpdatedRewardRatio",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "oldTimeUnit",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newTimeUnit",
+						"type": "uint256"
+					}
+				],
+				"name": "UpdatedTimeUnit",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "claimRewards",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "staker",
+						"type": "address"
+					}
+				],
+				"name": "getStakeInfo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokensStaked",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rewards",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "stake",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "unstake",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "thirdweb",
+			"events": {
+				"RewardsClaimed(address,uint256)": {
+					"details": "Emitted when a staker claims staking rewards."
+				},
+				"TokensStaked(address,uint256)": {
+					"details": "Emitted when tokens are staked."
+				},
+				"TokensWithdrawn(address,uint256)": {
+					"details": "Emitted when a tokens are withdrawn."
+				},
+				"UpdatedMinStakeAmount(uint256,uint256)": {
+					"details": "Emitted when contract admin updates minimum staking amount."
+				},
+				"UpdatedRewardRatio(uint256,uint256,uint256,uint256)": {
+					"details": "Emitted when contract admin updates rewardsPerUnitTime."
+				},
+				"UpdatedTimeUnit(uint256,uint256)": {
+					"details": "Emitted when contract admin updates timeUnit."
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"getStakeInfo(address)": {
+					"params": {
+						"staker": "Address for which to calculated rewards."
+					}
+				},
+				"stake(uint256)": {
+					"params": {
+						"amount": "Amount to stake."
+					}
+				},
+				"unstake(uint256)": {
+					"params": {
+						"amount": "Amount to withdraw."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"claimRewards()": {
+					"notice": "Claim accumulated rewards."
+				},
+				"getStakeInfo(address)": {
+					"notice": "View amount staked and total rewards for a user."
+				},
+				"stake(uint256)": {
+					"notice": "Stake ERC721 Tokens."
+				},
+				"unstake(uint256)": {
+					"notice": "Withdraw staked tokens."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/npm/@thirdweb-dev/contracts/extension/interface/IStaking20.sol": "IStaking20"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/npm/@thirdweb-dev/contracts/extension/interface/IStaking20.sol": {
+			"keccak256": "0xc3c0db46f15ae26be837718fe5f8ef0cab17e3e1987de836af71cc0b59b78b50",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://827461dedbe4868983273013999746cf0c04fe9abb156fb51bdf89e1e23c50cc",
+				"dweb:/ipfs/QmXFo3A1pm1yq6EpxXXsFH2BF5QT1mEme3Ru2NALjbw81J"
+			]
+		}
+	},
+	"version": 1
+}
